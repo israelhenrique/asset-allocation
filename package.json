@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/israelhenrique/investment-asset-allocation#readme",
   "devDependencies": {
-    "lint": "^1.1.2"
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0"
   },
   "dependencies": {
     "request": "^2.71.0"
