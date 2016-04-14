@@ -4,6 +4,7 @@
   "description": "",
   "main": "./getstock.js",
   "scripts": {
+    "fixpack": "fixpack",
     "start": "node $npm_package_main",
     "lint": "eslint .",
     "lint:fix": "npm run lint --silent -- --fix"
@@ -26,7 +27,8 @@
   "homepage": "https://github.com/israelhenrique/investment-asset-allocation#readme",
   "devDependencies": {
     "eslint": "^2.7.0",
-    "eslint-config-airbnb": "^7.0.0"
+    "eslint-config-airbnb": "^7.0.0",
+    "fixpack": "^2.3.1"
   },
   "dependencies": {
     "request": "^2.71.0"
