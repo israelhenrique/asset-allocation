@@ -1,0 +1,31 @@
+{
+  "name": "investment-asset-allocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israelhenrique/investment-asset-allocation.git"
+  },
+  "keywords": [
+    "asset",
+    "allocation",
+    "finance",
+    "investment"
+  ],
+  "author": "Israel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israelhenrique/investment-asset-allocation/issues"
+  },
+  "homepage": "https://github.com/israelhenrique/investment-asset-allocation#readme",
+  "devDependencies": {
+    "lint": "^1.1.2"
+  },
+  "dependencies": {
+    "request": "^2.71.0"
+  }
+}
