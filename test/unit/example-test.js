@@ -45,3 +45,17 @@
  * const Person = require('../../src/person.js')
  * ```
  */
+class Person {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+describe('Person', () => {
+  describe('#constructor', () => {
+    it('should build an object with given parameters', () => {
+      const p1 = new Person('John')
+      expect(p1.name).to.equals('John')
+    })
+  })
+})
