@@ -26,3 +26,13 @@ npm run lint
 ```
 npm run lint:fix
 ```
+
+### Running tests:
+```
+npm run test
+```
+
+### Continuous testing on file changes:
+```
+npm run test:watch
+```
