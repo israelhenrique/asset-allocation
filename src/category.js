@@ -6,7 +6,7 @@ class Category {
     this.assets = assets
     this.value = 0
 
-    assets.each((item) => {
+    assets.forEach((item) => {
       this.value = this.value + item.value * item.quotes
     })
   }

@@ -27,7 +27,6 @@
     "test:watch": "npm run test -- -w"
   },
   "dependencies": {
-    "list": "0.0.4",
     "request": "^2.71.0"
   },
   "devDependencies": {
