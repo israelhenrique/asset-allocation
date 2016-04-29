@@ -28,17 +28,17 @@
     "test:watch": "npm run test -- -w"
   },
   "dependencies": {
-    "request": "^2.71.0"
+    "request": "~2.71.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-string": "^1.2.0",
-    "eslint": "^2.7.0",
-    "eslint-config-airbnb": "^7.0.0",
-    "eslint-plugin-mocha": "^2.2.0",
-    "fixpack": "^2.3.1",
-    "mocha": "^2.4.5",
-    "mocha-clean": "^1.0.0",
-    "node-inspector": "^0.12.8"
+    "chai": "~3.5.0",
+    "chai-string": "~1.2.0",
+    "eslint": "~2.7.0",
+    "eslint-config-airbnb": "~7.0.0",
+    "eslint-plugin-mocha": "~2.2.0",
+    "fixpack": "~2.3.1",
+    "mocha": "~2.4.5",
+    "mocha-clean": "~1.0.0",
+    "node-inspector": "~0.12.8"
   }
 }
