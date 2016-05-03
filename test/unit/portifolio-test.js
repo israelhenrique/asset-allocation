@@ -57,8 +57,6 @@ describe('Portifolio', () => {
       const categoryList = [c1, c2, c3]
       const portifolio = new Portifolio(categoryList, [45, 20, 35], 5)
       expect(portifolio.isBalanced()).to.equals(true)
-      portifolio.alloc = [35, 20, 45]
-      expect(portifolio.isBalanced()).to.equals(false)
     })
     it('return false if the portifolio is not balanced', () => {
       const arrayAcoes = []
