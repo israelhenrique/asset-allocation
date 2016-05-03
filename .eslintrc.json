@@ -1,9 +1,12 @@
 {
-  "extends": "airbnb/base",
+  "extends": "airbnb-base",
   "env": {
     "browser": false,
     "node": true,
     "commonjs": true
+  },
+  "parserOptions": {
+    "sourceType": "script"
   },
   "rules": {
     "consistent-return": 0,
