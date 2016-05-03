@@ -24,6 +24,7 @@
     "lint:fix": "npm run lint --silent -- --fix",
     "start": "node $npm_package_main",
     "test": "mocha",
+    "test:debug": "node-debug _mocha --timeout 0",
     "test:watch": "npm run test -- -w"
   },
   "dependencies": {
@@ -37,6 +38,7 @@
     "eslint-plugin-mocha": "^2.2.0",
     "fixpack": "^2.3.1",
     "mocha": "^2.4.5",
-    "mocha-clean": "^1.0.0"
+    "mocha-clean": "^1.0.0",
+    "node-inspector": "^0.12.8"
   }
 }
