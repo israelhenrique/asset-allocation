@@ -12,12 +12,12 @@ class Portifolio {
     })
   }
   isBalanced() {
-    let msg = 'balanced'
+    let msg = true
     let percent = 0
     this.categories.forEach((item, index) => {
       percent = (item.value / this.value) * 100
       if (Math.abs(this.alloc[index] - percent) > this.rebalancePercent) {
-        msg = 'desbalanced'
+        msg = false
       }
     })
     return msg
