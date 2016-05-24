@@ -1,5 +1,10 @@
 # asset-allocation
 
+## Some notes:
+
+This project uses Node.js v6.x.  
+You can use [Node Version Manager](https://github.com/creationix/nvm), there is a `.nvmrc` file available in this project
+
 ## Commands:
 
 ### Setup
