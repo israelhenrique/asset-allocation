@@ -9,8 +9,12 @@ const query = `select ${qAttrib} from yahoo.finance.quotes where symbol in ( "${
 const url = `https://query.yahooapis.com/v1/public/yql?q=${query}&format=json&env=${env}&callback=`
 const request = require('request')
 
+console.log(url)
+
 request(url, (error, response, body) => {
   if (!error && response.statusCode === 200) {
-    console.log(body) // Show the HTML for the Google homepage.
+    console.log(body) // Se fizer body.query da ruim
   }
 })
+const json = {"query":{"count":1,"created":"2016-07-14T21:04:35Z","lang":"en-US","results":{"quote":{"LastTradePriceOnly":"53.61"}}}};
+console.log(json.query)
