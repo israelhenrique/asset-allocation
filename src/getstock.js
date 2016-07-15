@@ -13,8 +13,7 @@ console.log(url)
 
 request(url, (error, response, body) => {
   if (!error && response.statusCode === 200) {
-    console.log(body) // Se fizer body.query da ruim
+    const json = JSON.parse(body)
+    console.log(json.query.results.LastTradePriceOnly)
   }
 })
-const json = {"query":{"count":1,"created":"2016-07-14T21:04:35Z","lang":"en-US","results":{"quote":{"LastTradePriceOnly":"53.61"}}}};
-console.log(json.query)
