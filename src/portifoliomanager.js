@@ -15,7 +15,7 @@ class PortifolioManager {
     }
     return msg
   }
-  fixPortifolioBalance(portifolio) {
+  necessaryBalance(portifolio) {
     let msg = ''
     if (!portifolio.isBalanced()) {
       portifolio.categories.forEach((item, index) => {

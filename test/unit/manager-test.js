@@ -28,8 +28,8 @@ describe('PortifolioManager', () => {
       expect(portifoliomanager.checkPortifolioBalance(portifolio)).to.equals(msg)
     })
   })
-  describe('#fixPortifolioBalance', () => {
-    it('check a desbalanced portifolio', () => {
+  describe('#necessaryBalance', () => {
+    it('should return the necessary balance', () => {
       const arrayAcoes = []
       const c1 = new Category('Acoes', arrayAcoes)
       c1.value = 40
@@ -38,7 +38,7 @@ describe('PortifolioManager', () => {
       portifolio.value = 100
       const portifoliomanager = new PortifolioManager()
       const msg = 'Category Acoes needs 10 to be balanced\n'
-      expect(portifoliomanager.fixPortifolioBalance(portifolio)).to.equals(msg)
+      expect(portifoliomanager.necessaryBalance(portifolio)).to.equals(msg)
     })
   })
 })
