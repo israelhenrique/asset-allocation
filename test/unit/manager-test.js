@@ -38,7 +38,7 @@ describe('PortifolioManager', () => {
       portifolio.value = 100
       const portifoliomanager = new PortifolioManager()
       const msg = 'Category Acoes needs 10 to be balanced\n'
-      expect(portifoliomanager.necessaryBalance(portifolio)).to.equals(msg)
+      expect(portifoliomanager.getNecessaryBalance(portifolio)).to.equals(msg)
     })
   })
 })
