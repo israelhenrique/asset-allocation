@@ -3,7 +3,7 @@
 const request = require('request')
 
 class GetStock {
-  getPrice(stockCode) {
+  getPrice(stockCode, callback) {
     const qAttrib = 'LastTradePriceOnly'
     const env = 'store%3A%2F%2Fdatatables.org%2Falltableswithkeys'
     const query = `select ${qAttrib} from yahoo.finance.quotes where symbol in ( "${stockCode}" )`
@@ -12,7 +12,7 @@ class GetStock {
 
     request(options, (error, response, json) => {
       if (!error && response.statusCode === 200) {
-        return json.query.results.quote.LastTradePriceOnly
+        callback(json.query.results.quote.LastTradePriceOnly)
       }
     })
   }
