@@ -28,7 +28,7 @@ describe('PortifolioManager', () => {
       expect(portifoliomanager.checkPortifolioBalance(portifolio)).to.equals(msg)
     })
   })
-  describe('#necessaryBalance', () => {
+  describe('#getNecessaryBalance', () => {
     it('should return the necessary balance', () => {
       const arrayAcoes = []
       const c1 = new Category('Acoes', arrayAcoes)
